@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 5000;
 initMiddlewares(app);
 initRoutes(app);
 
-app.get("/", (req, res) => res.send("ok"));
+app.get("/", (req, res) => res.send("index"));
 
 app.listen(PORT, () => {
   console.log(`Le serveur fonctionne sur le port ${PORT}`);

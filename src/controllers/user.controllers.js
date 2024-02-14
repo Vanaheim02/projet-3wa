@@ -2,7 +2,6 @@ import isEmail from "validator/lib/isEmail.js";
 import { hashPass, compareHash } from "../utils/crypto.utils.js";
 import { UsersDB } from "../databases/user.db.js";
 
-// create user
 // Fonction de création d'un utilisateur
 const create = async(req, res) => {
     const { email, password, pseudo } = req.body;
