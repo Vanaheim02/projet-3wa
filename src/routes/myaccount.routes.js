@@ -1,14 +1,14 @@
 import express from "express"
 import jwtMdlwr from "../middlewares/jwt.mdlwr.js"
 import checkAdmin from "../middlewares/check.admin.js";
-import { myaccountrController } from "../controllers/myaccount.controllers.js"
+import { accountController } from "../controllers/account.controllers.js"
 
-const initMyaccountRoute = (app) => {
-    const myaccountRouter = express.Router();
+const initaccountRoute = (app) => {
+    const accountRouter = express.Router();
     
-    myaccountRouter.get('/:userId', myaccountControllers.getuser);
+    accountRouter.get('/:userId', accountControllers.getuser);
     
-    app.use('/myaccount', myaccountRouter);
+    app.use('/account', accountRouter);
 };
 
-export default initMyaccountRoute;
+export default initaccountRoute;

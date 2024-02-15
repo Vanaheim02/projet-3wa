@@ -7,7 +7,7 @@ import { categoryController } from "../category/calendar.category.js"
 const initCategoryRoute = (app) => {
     const categoryRouter = express.Router();
     
-    categoryRouter.get('/:game_genres', categoryController.getgamegenres);
+    categoryRouter.get('/', categoryController.getAllcategory);
     
     app.use('/category', categoryRouter);
 };
