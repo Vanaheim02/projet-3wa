@@ -5,6 +5,7 @@
 // import initPlateformRoutes from './plateform.routes.js';
 // import initUser from './user.routes.js';
 import initUsersRoutes from './users.routes.js';
+import initGamesRoutes from './games.routes.js';
 
 const initRoutes = (app) => {
 
@@ -15,6 +16,7 @@ const initRoutes = (app) => {
 //   initMylistRoutes(app);
 //   initPlateformRoutes(app);
     initUsersRoutes(app);
+    initGamesRoutes(app);
 };
 
 export default initRoutes;
