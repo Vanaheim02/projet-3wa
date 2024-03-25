@@ -1,0 +1,51 @@
+.footer {
+    background-color: #292525c0;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-title {
+    display: flex;
+    align-items: center;
+    margin-right: 10rem;
+  }
+
+  .footer-title a {
+    text-decoration: none;
+    color: inherit;
+    margin-right: 1;
+  }
+
+  .mail-icon {
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+
+  .mail-icon:hover {
+    color: #fff;
+  }
+
+  .mail-icon:hover::before {
+    content: "Contactez-nous";
+    position: absolute;
+    top: -20px;
+    left: -5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    display: none;
+  }
+
+  .footer-title:hover .mail-icon {
+    color: white; /* Changement de couleur de l'icône au survol */
+  }

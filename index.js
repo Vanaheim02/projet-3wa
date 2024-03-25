@@ -4,6 +4,7 @@ import initMiddlewares from "./src/middlewares/init.mdlwr.js";
 // const initMiddlewares = require("./src/middlewares/init.mdlwr.js");
 import initRoutes from "./src/routes/init.routes.js";
 // const initRoutes = require("./routes/init.routes.js");
+import 'dotenv/config'
 
 const app = express();
 const PORT = process.env.PORT || 5000;

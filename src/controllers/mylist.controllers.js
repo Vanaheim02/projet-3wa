@@ -3,7 +3,7 @@ import { UsersDB } from "../databases/users.db.js";
 // Contrôleur pour récupérer la liste personnelle de jeux d'un utilisateur
 const getMyList = async (req, res) => {
   try {
-    // Supposons que vous avez un middleware d'authentification qui place les informations de l'utilisateur dans req.user
+    // Nous utilisons un middleware d'authentification pour récupérer les informations de l'utilisateur depuis la requête
     const userId = req.user.id;
 
     // Logique pour récupérer la liste personnelle de jeux de l'utilisateur depuis la base de données

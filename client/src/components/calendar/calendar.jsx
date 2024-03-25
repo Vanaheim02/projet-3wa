@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Calendar from 'react-calendar';
+import "./calendar.scss";
+import FilterComponent from '../filter/filter';
 
 const CalendarComponent = () => {
   const [date, setDate] = useState(new Date());
@@ -37,6 +39,7 @@ const CalendarComponent = () => {
 
   return (
     <div>
+      <FilterComponent />
       <Calendar
         onChange={handleChange}
         value={date}
@@ -44,8 +47,8 @@ const CalendarComponent = () => {
       <select value={selectedPlatform} onChange={handlePlatformChange}>
         <option value="Toutes">Toutes</option>
         <option value="PC">PC</option>
-        <option value="PlayStation 4">PlayStation</option>
-        <option value="PlayStation 5">PlayStation</option>
+        <option value="PlayStation 4">PlayStation 4</option>
+        <option value="PlayStation 5">PlayStation 5</option>
         <option value="Xbox">Xbox one</option>
         <option value="Xbox">Xbox Series</option>
         {/* ...autres plateformes */}

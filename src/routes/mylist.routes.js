@@ -6,7 +6,7 @@ import { mylistController } from "../controllers/mylist.controllers.js"
 const initMylistRoute = (app) => {
     const mylistRouter = express.Router();
     
-    mylistRouter.get('/:plateformId', mylistController.getplateformiId);
+    mylistRouter.get('/', mylistController.getplateformiId);
     
     app.use('/mylist', mylistRouter);
 };

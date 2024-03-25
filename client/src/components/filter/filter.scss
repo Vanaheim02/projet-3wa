@@ -1,0 +1,26 @@
+.filtre-container {
+  position: relative;
+}
+
+.filtre-cellule {
+  width: 50px;
+  height: 50px;
+  background-color: #888e84;
+  cursor: pointer;
+}
+
+.filtre-filtres {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transform: translateX(10px);
+  background-color: #f2eeb6;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+
+.filtre-container:hover .filtre-filtres {
+  display: block;
+}

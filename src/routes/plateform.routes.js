@@ -6,7 +6,7 @@ import { plateformController } from "../controllers/plateform.controllers.js"
 const initPlateformRoute = (app) => {
     const plateformRouter = express.Router();
     
-    plateformRouter.get('/:gameId', plateformController.getgameId);
+    plateformRouter.get('/', plateformController.getgameId);
     
     app.use('/plateform', plateformRouter);
 };

@@ -1,5 +1,3 @@
-// Importez votre module de base de données si nécessaire
-// Assurez-vous d'adapter cette partie en fonction de votre base de données réelle
 import { Database } from "./database.js";
 
 const MyListDB = {

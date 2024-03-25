@@ -1,0 +1,127 @@
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #A6BF6F;
+
+  .logo-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+
+  .header-title {
+    margin: 0;
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    background-color: #A6BF6F;
+    padding: 10px;
+    display: flex;
+    align-items: center; /* Vertical alignment */
+  }
+
+  .logo {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    margin-right: auto; /* Place logo to the right */
+  }
+
+  .icon-link {
+    margin-left: auto; /* Place icon to the right */
+  }
+
+  .white-icon {
+    color: white;
+    text-decoration: none;
+    margin-left: 5rem;
+  }
+
+  .navbar {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0; /* Reduce vertical margin */
+    display: flex;
+
+    li {
+      margin-right: 20px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+        transition: color 0.3s;
+        background-color: #888C84;
+        padding: 10px;
+        border-radius: 5px;
+
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+
+  /* Hamburger Menu Styles */
+  .burger-menu {
+    display: none; /* Hide by default */
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    cursor: pointer;
+
+    @media only screen and (max-width: 768px) {
+      display: block; /* Show on mobile */
+    }
+  }
+
+  .burger-line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px auto;
+  }
+
+  /* Media queries for responsive behavior */
+  @media only screen and (max-width: 768px) {
+    /* Adjust header title size for mobile */
+    .header-title {
+      font-size: 24px; /* Reduce size for mobile */
+    }
+
+    /* Hide the navbar text on mobile and show as a dropdown menu */
+    .navbar {
+      display: none;
+    }
+
+    .navbar.active {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: #A6BF6F;
+      z-index: 9;
+    }
+
+    .navbar li {
+      margin: 10px 0;
+      text-align: center;
+    }
+
+    .navbar a {
+      width: 100%;
+      padding: 15px;
+    }
+  }
+}

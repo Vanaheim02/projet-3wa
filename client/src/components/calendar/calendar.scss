@@ -1,0 +1,14 @@
+.calendar-container {
+    background-color: #F2EEB6;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .react-calendar {
+    border: none;
+  }
+
+  .react-calendar__tile--active {
+    background-color: #888E84;
+    color: white;
+  }

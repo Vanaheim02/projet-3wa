@@ -1,0 +1,58 @@
+.sign-in-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Pleine hauteur de la fenêtre */
+  }
+
+  .sign-in-form {
+    width: 300px; /* Largeur du formulaire */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .sign-in-form__inputs {
+    margin-bottom: 20px;
+  }
+
+  .sign-in-form__btns {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sign-in-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .sign-in-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  .sign-in-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  .sign-in-form button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+  }
+
+  .sign-in-form button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+  .success-message {
+    margin-top: 20px;
+    color: #28a745;
+  }

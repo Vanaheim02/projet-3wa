@@ -1,15 +1,16 @@
-import mysql from "mysql";
+import mysql from "mysql"; 
+import 'dotenv/config';
 
 const pool = mysql.createPool({
   connectionLimit: 10000,
-  host: process.env.DB_HOST || "localhost",
-  port: process.env.DB_PORT || "3306",
-  user: process.env.DB_USER || "admin",
-  password: process.env.DB_PASS || "admin",
-  database: process.env.DB_NAME || "projet-3wa",
+  host: process.env.DB_HOST,
+  port: process.env.DB_PORT,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASS,
+  database: process.env.DB_NAME,
 });
 
-const query = (sql, values = []) => {
+const Database = (sql, values = []) => {
   return new Promise((resolve, reject) => {
     pool.query(sql, values, (error, result, fields) => {
       //ce qu'on fait ici une fois que la requête est exécutée
@@ -21,4 +22,4 @@ const query = (sql, values = []) => {
   });
 };
 
-export default query;
+export default Database;
